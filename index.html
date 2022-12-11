@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 16.Homework</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header"></header>
+        <main class="page">
+            <!-- <div class="page__container">
+                 <form class="form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+                    <div class="form__label">
+                        <label for="name-1">Enter your name</label>
+                    </div>
+                    <div class="form__line">
+                        <input id="name-1" class="form__input" type="text" name="name" placeholder="Enter your name"
+                            autocomplete="off">
+                    </div>
+                    <div class="form__label">
+                        <label for="surname-1">Enter your surname</label>
+                    </div>
+                    <div class="form__line">
+                        <input id="surname-1" class="form__input" type="text" name="surname"
+                            placeholder="Enter your surname">
+                    </div>
+                    <div class="form__label">
+                        <label for="age-1">Enter your age</label>
+                    </div>
+                    <div class="form__line">
+                        <input id="age-1" class="form__input" type="text" name="age" placeholder="Enter your age">
+                    </div>
+                    <div class="form__label">
+                        <label for="email-1">Enter your email</label>
+                    </div>
+                    <div class="form__line">
+                        <input id="email-1" class="form__input" type="email" name="email" placeholder="Enter your email"
+                            autocomplete="off">
+                    </div>
+                    <div class="form__label">
+                        <label for="tel-1">Enter your phone number</label>
+                    </div>
+                    <div class="form__line">
+                        <input id="tel-1" class="form__input" type="tel" name="tel"
+                            placeholder="Enter your phone number" autocomplete="off">
+                    </div>
+                    <div class="form__line">
+                        <input class="form__input" type="hidden" value="you are gay" name="hz">
+                    </div>
+                    <div class="form__label">
+                        <label for="passwowrd-1">Enter your password</label>
+                    </div>
+                    <div class="form__line">
+                        <input id="password-1" class="form__input" type="password" name="password"
+                            placeholder="Enter your password" autocomplete="off">
+                    </div>
+                    <div class="form__label">
+                        <label for="quanitty-1">Choose quantity</label>
+                    </div>
+                    <div class="form__line">
+                        <input id="quantity-1" class="form__input" type="number" name="quantity"
+                            placeholder="Choose quantity" autocomplete="off">
+                    </div>
+                    <div class="form__label">
+                        <label for="color-1">Choose color you like</label>
+                    </div>
+                    <div class="form__line">
+                        <input id="color-1" class="form__input form__input--color" type="color" name="color">
+                    </div>
+                    <div class="form__label">
+                        <label for="search-1">What are you looking for?</label>
+                    </div>
+                    <div class="form__line">
+                        <input id="search-1" class="form__input" type="search" name="search"
+                            placeholder="What are you looking for?">
+                    </div>
+                    <div class="form__label">
+                        <label for="date-1">Date</label>
+                    </div>
+                    <div class="form__line">
+                        <input id="date-1" class="form__input" type="date" name="date" placeholder="Date">
+                    </div>
+                    <div class="form__label">
+                        <label for="range-1">Range</label>
+                    </div>
+                    <div class="form__line">
+                        <input id="range-1" class="form__input form__input--outline" type="range" name="range">
+                    </div>
+                    <div class="form__line">
+                        <input id="yo?" class="form__input form__input--check" type="checkbox" name="yo">
+                        <label for="yo?">Yo?</label>
+                    </div>
+                    <div class="form__line">
+                        <input id="yeah" class="form__input form__input--check" type="checkbox" name="yeah">
+                        <label for="yeah">Oh yeah?</label>
+                    </div>
+                    <div class="form__title">Putin is:</div>
+                    <div class="form__radio">
+                        <input class="form__input form__input--check" type="radio" name="putin" value="faggot"
+                            id="putin-1">
+                        <label for="putin-1">faggot</label>
+                    </div>
+                    <div class="form__radio">
+                        <input class="form__input form__input--check" type="radio" name="putin" value="pussy"
+                            id="putin-2">
+                        <label for="putin-2">pussy</label>
+                    </div>
+                    <div class="form__radio">
+                        <input class="form__input form__input--check" type="radio" name="putin" value="cocksucker"
+                            id="putin-3" checked>
+                        <label for="putin-3">cocksucker</label>
+                    </div>
+                    <div class="form__label">
+                        <label for="browse-1">Browse a file/files</label>
+                    </div>
+                    <div class="form__line">
+                        <input id="browse-1" class="form__input" type="file" name="file" multiple
+                            accept="image/png, image/jpeg">
+                    </div>
+                    <div class="form__label">
+                        <label for="area-1">Post your message:</label>
+                    </div>
+                    <div class="form__line">
+                        <textarea id="area-1" class="form__area" name="area" placeholder="Allah Akbar"></textarea>
+                    </div>
+                    <div class="form__line">
+                        <select name="list">
+                            <option value="">Kek1</option>
+                            <option value="">Kek2</option>
+                            <option selected value="">Kek3</option>
+                            <option value="">Kek4</option>
+                            <option value="">Kek5</option>
+                        </select>
+                        <div class="form__line form__line--check">
+                            <div class="checkbox">
+                                <input type="checkbox" class="checkbox__input" value="yes" name="car" id="vehicle">
+                                <label for="vehicle" class="checkbox__label"><span class="checkbox__text">Got a
+                                        ride??</span></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__button">
+                        <button type="submit" class="form__button-item" name="submit">Submit</button>
+                    </div>
+                    <div class="form__button">
+                        <button type="reset" class="form__button-item" name="submit">Reset</button>
+                    </div>
+                </form>
+            </div> -->
+            <section class="page__message message-block">
+                <div class="message-block__container">
+                    <div class="message-block__body body-message">
+                        <div class="body-message__media">
+                            <img src="img/WOMAN.svg" alt="woman">
+                        </div>
+                        <div class="body-message__content">
+                            <div class="body-message__heading">
+                                <h2 class="body-message__title">Any questions?</h2>
+                                <h1 class="body-message__title-big">Drop us a line</h1>
+                            </div>
+                            <form action="https://jsonplaceholder.typicode.com/posts" method="post"
+                                class="body-message__form form">
+                                <div class="form__row">
+                                    <div class="form__input">
+                                        <label for="first-name" class="form__label">First name*</label>
+                                        <input class="form__item" name="first-name" type="text" required
+                                            placeholder="Your first name" id="first-name">
+                                    </div>
+                                    <div class="form__input">
+                                        <label for="last-name" class="form__label">Last name*</label>
+                                        <input class="form__item" name="last-name" type="text" required
+                                            placeholder="Your last name" id="last-name">
+                                    </div>
+                                </div>
+                                <div class="form__row">
+                                    <div class="form__input">
+                                        <label for="email" class="form__label">Email*</label>
+                                        <input class="form__item" name="email" type="email" required
+                                            placeholder="Your working email" id="email">
+                                    </div>
+                                    <div class="form__input">
+                                        <label for="phone" class="form__label">Phone</label>
+                                        <input class="form__item" name="tel" type="tel" placeholder="Your phone number"
+                                            id="phone">
+                                    </div>
+                                </div>
+                                <div class="form__row">
+                                    <div class="form__textarea">
+                                        <label for="textarea" class="form__label">Message*</label>
+                                        <textarea class="form__item form__item--textarea" placeholder="Your message"
+                                            id="textarea" required name="message"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form__row form__row--checkbox">
+                                    <div class="form__checkbox">
+                                        <input class="form__item-checkbox" name="agree" value="yes" type="checkbox"
+                                            id="checkbox" required>
+                                        <label for="checkbox" class="form__label"><span class="form__span">I agree to
+                                                receive
+                                                communications from
+                                                Createx Online School</span></label>
+                                    </div>
+                                    <div class="form__button">
+                                        <button type="submit" class="form__submit">Send
+                                            message</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer"></footer>
+    </div>
+</body>
+
+</html>

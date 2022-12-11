@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+.wrapper {
+    overflow: hidden;
+    position: relative;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper>main {
+    flex-grow: 1;
+}
+
+[class*="__container"] {
+    max-width: 1260px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+body {
+    background-color: #FFFFFF;
+    font-family: "Lato";
+}
+
+/* .form {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 10px;
+}
+
+.form__label {
+    margin-bottom: 5px;
+    color: aliceblue;
+}
+
+.form__input {
+    margin-bottom: 10px;
+    padding-left: 5px;
+}
+
+.form__input--color {
+    padding-left: 0px;
+}
+
+.form__input::placeholder {
+    color: red;
+}
+
+.form__input:focus {
+    outline: 2px solid blue;
+}
+
+.form__input--outline:focus {
+    outline: none;
+}
+
+.form__input--check {
+    width: auto;
+    vertical-align: middle;
+    transform: translateY(3px);
+}
+
+.form__input--check:focus {
+    outline: none;
+}
+
+.form__title {
+    margin: 5px 0px 5px 0px;
+}
+
+.form__area {
+    width: 100%;
+    height: 100px;
+    padding: 15px;
+    resize: vertical;
+}
+
+.form__area::placeholder {
+    color: red;
+}
+
+.form__button {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.form__line--check {
+    margin-top: 10px;
+}
+
+.checkbox__input {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+} */
+
+/* .checkbox__input:focus+.checkbox__label {
+    outline: 1px solid white;
+    border-radius: 5px;
+} */
+
+/* .checkbox__input:checked+.checkbox__label::before {
+    background: white url('../img/check.png') center / 75% no-repeat;
+}
+
+.checkbox__label {
+    cursor: pointer;
+    display: inline-flex;
+    gap: 10px;
+}
+
+.checkbox__label::before {
+    content: "";
+    background-color: white;
+    flex: 0 0 13px;
+    height: 13px;
+    width: 13px;
+}
+
+.checkbox__text {
+    align-self: center;
+} */
+
+.header {
+    margin-bottom: 180px;
+}
+
+.body-message {
+    display: flex;
+    justify-content: space-between;
+    gap: 105px;
+}
+
+.body-message__media img {
+    align-self: center;
+    max-width: 100%;
+}
+
+.body-message__media {
+    flex-basis: 40%;
+}
+
+.body-message__content {
+    flex-basis: 60%;
+}
+
+.body-message__heading {
+    color: #1E212C;
+    margin-bottom: 40px;
+}
+
+.body-message__title {
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.body-message__title:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.body-message__title-big {
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 130%;
+}
+
+.body-message__form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+}
+
+.form__row {
+    display: flex;
+    /* flex-direction: row; */
+    gap: 25px;
+}
+
+.form__input {
+    flex: 0 1 50%;
+}
+
+.form__item {
+    padding: 13px 16px;
+    /* width: 100%; */
+    border: 1px solid #D7DADD;
+    border-radius: 4px;
+}
+
+.form__label {
+    line-height: 160%;
+    color: #424551;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+.form__textarea {
+    /* width: 100%; */
+    flex-grow: 1;
+}
+
+.form__item--textarea {
+    margin-bottom: 24px;
+    width: 100%;
+    height: 128px;
+    resize: none;
+}
+
+.form__checkbox {
+    position: relative;
+}
+
+.form__checkbox .form__label {
+    cursor: pointer;
+    display: inline-flex;
+    gap: 12px;
+}
+
+.form__span {
+    line-height: 160%;
+    color: #424551;
+    align-self: center;
+    /*ne rabotaet suka */
+}
+
+.form__checkbox .form__label::before {
+    content: "";
+    flex: 0 0 16px;
+    width: 16px;
+    height: 16px;
+    background-color: #FFFFFF;
+    border: 1px solid #B3B7BC;
+    border-radius: 3px;
+}
+
+.form__item-checkbox {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+.form__item-checkbox:checked+.form__label::before {
+    background: #FF3F3A url('../img/whitecheck.svg') center / 10px 8px no-repeat;
+}
+
+/*
+.form__row--checkbox {
+    gap: 62px;
+}
+*/
+
+.form__checkbox {
+    flex-basis: 44%;
+}
+
+.form__button {
+    flex-basis: 56%;
+}
+
+.form__submit {
+    background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+    border-radius: 4px;
+    font-weight: 700;
+    line-height: 52px;
+    letter-spacing: 0.5px;
+    color: #FFFFFF;
+    padding: 0px 117px 0px 117px;
+}
